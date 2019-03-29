@@ -19,13 +19,16 @@ class QuickSortTest {
 
     @Test
     void sortingSimpleItemsWorks() {
-        QuickSort quickSort = new QuickSort();
+        for (int i = 0; i < 10; i++) {
+            QuickSort quickSort = new QuickSort();
 
-        List<Integer> toSort = Arrays.asList(5, 3, 1, 12, 9);
-        quickSort.sort(toSort);
+            List<Integer> toSort = Arrays.asList(5, 3, 1, 12, 9);
+            quickSort.sort(toSort);
 
-        List<Integer> expected = Arrays.asList(1, 3, 5, 9, 12);
-        assertIterableEquals(expected, toSort);
+            List<Integer> expected = Arrays.asList(1, 3, 5, 9, 12);
+            assertIterableEquals(expected, toSort);
+        }
+
     }
 
     @Test
