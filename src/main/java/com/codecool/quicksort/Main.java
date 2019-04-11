@@ -6,7 +6,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        // Use the tests to check your code!
         QuickSort quickSort = new QuickSort();
         List<Integer> list = Arrays.asList(5, 3, 1, 12, 9,8,2,0);
         System.out.println(Arrays.toString(list.toArray()));
